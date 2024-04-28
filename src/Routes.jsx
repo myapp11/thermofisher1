@@ -2,14 +2,14 @@ import React from "react";
 import { useRoutes } from "react-router-dom";
 import Home from "pages/Home";
 import NotFound from "pages/NotFound";
-import ChangesThermofisherScientificCorporateLandingPageOp from "pages/ChangesThermofisherScientificCorporateLandingPageOp";
-import ThermofisherScientificCorporateCSR from "pages/ThermofisherScientificCorporateCSR";
-import ThermofisherScientificCorporateLandingPageCFour from "pages/ThermofisherScientificCorporateLandingPageCFour";
-import ChangesThermofisherScientificCorporateAbout from "pages/ChangesThermofisherScientificCorporateAbout";
+import ChangesThermofisherScientificCorporateLandingPageOp from "./pages/ChangesThermofisherScientificCorporateLandingPageOp";
+import ThermofisherScientificCorporateCSR from "./pages/ThermofisherScientificCorporateCSR";
+import ThermofisherScientificCorporateLandingPageCFour from "./pages/ThermofisherScientificCorporateLandingPageCFour";
+import ChangesThermofisherScientificCorporateAbout from "./pages/ChangesThermofisherScientificCorporateAbout";
 
 const ProjectRoutes = () => {
   let element = useRoutes([
-    { path: "dhiwise-dashboard", element: <Home /> },
+    { path: "Thermo_homepage", element: <Home /> },
     { path: "*", element: <NotFound /> },
     {
       path: "/",

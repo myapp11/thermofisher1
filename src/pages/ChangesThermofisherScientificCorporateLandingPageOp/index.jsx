@@ -6,9 +6,10 @@ import ChangesThermofisherScientificCorporateLandingPageOpDiversity from "../../
 import ChangesThermofisherScientificCorporateLandingPageOpDiversityand from "../../components/ChangesThermofisherScientificCorporateLandingPageOpDiversityand";
 import ChangesThermofisherScientificCorporateLandingPageOpListdescription from "../../components/ChangesThermofisherScientificCorporateLandingPageOpListdescription";
 import ChangesThermofisherScientificCorporateLandingPageOpOurstories from "../../components/ChangesThermofisherScientificCorporateLandingPageOpOurstories";
-import ChangesThermofisherScientificCorporateLandingPageOpSustainability from "../../components/ChangesThermofisherScientificCorporateLandingPageOpSustainability";
+// import ChangesThermofisherScientificCorporateLandingPageOpSustainability from "../../components/ChangesThermofisherScientificCorporateLandingPageOpSustainability";
 import Footer from "../../components/Footer";
-
+import './Style.css';
+import { Link } from 'react-router-dom';
 export default function ChangesThermofisherScientificCorporateLandingPageOpPage() {
   const [sliderState, setSliderState] = React.useState(0);
   const sliderRef = React.useRef(null);
@@ -35,35 +36,19 @@ export default function ChangesThermofisherScientificCorporateLandingPageOpPage(
                   className="justify-center h-[80px] w-full left-0 bottom-0 right-0 top-0 m-auto object-cover absolute"
                 />
               </div>
-              <style type="text/css">
-                {`
-                  .navbar {
-                    background-color: #333; /* Background color */
-                    overflow: hidden;
-                  }
-
-                  .navbar a {
-                    float: left; /* Float the links to the left */
-                    display: block; /* Display the links as block elements */
-                    color: white; /* Text color */
-                    text-align: center; /* Center-align text */
-                    padding: 14px 16px; /* Padding around the links */
-                    text-decoration: none; /* Remove underline */
-                  }
-
-                  .navbar a:hover {
-                    background-color: #ddd; /* Background color on hover */
-                    color: black; /* Text color on hover */
-                  }
-                `}
-              </style>
+              
               <div className="flex md:flex-col justify-center items-center gap-[42px]">
                 <nav className="navbar">
                   <div className="navdiv">
-                    <a href="#">ABOUT</a>
-                    <a href="#">CORPORATE SOCIAL RESPONSIBILITY</a>
-                    <a href="#">INVESTORS</a>
-                    <a href="#">NEWSROOM</a>
+                    {/* <a href="#">ABOUT</a> */}
+                    <Link to="/changesthermofisherscientificcorporateabout">ABOUT</Link>
+                    {/* {<a href="#">CORPORATE SOCIAL RESPONSIBILITY</a> */}
+                    <Link to="/thermofisherscientificcorporatecsr">CORPORATE SOCIAL RESPONSIBILITY</Link>
+                    {/* {<a href="#">INVESTORS</a> */}
+                    <Link to="/thermofisherscientificcorporatecsr">INVESTORS</Link>
+                    {/* {<a href="#">NEWSROOM</a> */}
+                    <Link to="/thermofisherscientificcorporatecsr">NEWSROOM</Link>
+                    
                     <a href="#"><Text /></a>
                     <a href="#"><Text /></a>
                     <a href="#"><Text /></a>
@@ -84,7 +69,7 @@ export default function ChangesThermofisherScientificCorporateLandingPageOpPage(
           <ChangesThermofisherScientificCorporateLandingPageOpOurstories className="mt-[-2px]" />
           <div>
             <div className="py-[50px] md:py-5 bg-gray-100_01">
-              <ChangesThermofisherScientificCorporateLandingPageOpSustainability className="flex flex-col mt-[27px] pb-[7px] pl-[7px] gap-[50px]" />
+              {/* <ChangesThermofisherScientificCorporateLandingPageOpSustainability className="flex flex-col mt-[27px] pb-[7px] pl-[7px] gap-[50px]" /> */}
             </div>
             <div className="mt-8 pt-[38px] sm:pt-5">
               <div>
